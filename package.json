@@ -10,7 +10,8 @@
     "logs:prod": "heroku logs --tail",
     "start": "node index.js",
     "dev": "nodemon index.js -L",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "author": "Matti Luukkainen",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "mongoose": "^6.1.7"
   },
   "devDependencies": {
+    "eslint": "^8.7.0",
     "nodemon": "^2.0.15"
   }
 }
