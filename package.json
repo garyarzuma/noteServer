@@ -10,7 +10,7 @@
     "logs:prod": "heroku logs --tail",
     "start": "node index.js",
     "dev": "nodemon index.js -L",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose",
     "lint": "eslint ."
   },
   "author": "Matti Luukkainen",
@@ -23,6 +23,10 @@
   },
   "devDependencies": {
     "eslint": "^8.7.0",
+    "jest": "^27.4.7",
     "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
